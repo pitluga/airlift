@@ -9,6 +9,8 @@ module Lorrie
       empty_directory(File.join(path, 'applications'))
       create_file(File.join(path, 'applications', 'puppet.rb'), <<-EOF)
 require 'supply_drop'
+
+role :server, *data_center.nodes
       EOF
       empty_directory(File.join(path, 'data_centers'))
       empty_directory(File.join(path, 'extdata'))
@@ -16,7 +18,7 @@ require 'supply_drop'
       empty_directory(File.join(path, 'modules'))
       create_file(File.join(path, 'Capfile'), <<-EOF)
 require 'rubygems'
-require 'lorrie/data_center'
+require 'lorrie'
 Dir.glob(File.expand_path('../data_centers/*.rb', __FILE__)).each { |dc| load(dc) }
       EOF
     end
