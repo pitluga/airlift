@@ -6,11 +6,11 @@ Gem::Specification.new do |s|
   s.name        = "lorrie"
   s.version     = Lorrie::VERSION
   s.platform    = Gem::Platform::RUBY
-  s.authors     = ["TODO: Write your name"]
-  s.email       = ["TODO: Write your email address"]
+  s.authors     = ["Tony Pitluga"]
+  s.email       = ["tony.pitluga@gmail.com"]
   s.homepage    = ""
-  s.summary     = %q{TODO: Write a gem summary}
-  s.description = %q{TODO: Write a gem description}
+  s.summary     = %q{data center management}
+  s.description = %q{manage multiple applications and data centers with puppet and capistrano}
 
   s.rubyforge_project = "lorrie"
 
@@ -19,6 +19,7 @@ Gem::Specification.new do |s|
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
   s.add_dependency "capistrano", "~> 2.9"
+  s.add_dependency "supply_drop", "~> 0.4"
   s.add_dependency "thor", "~> 0.14"
   s.add_development_dependency "rspec", "2.5.0"
 end
