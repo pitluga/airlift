@@ -18,6 +18,7 @@ Gem::Specification.new do |s|
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
-  s.add_dependency "capistrano", "~> 2.9.0"
+  s.add_dependency "capistrano", "~> 2.9"
+  s.add_dependency "thor", "~> 0.14"
   s.add_development_dependency "rspec", "2.5.0"
 end

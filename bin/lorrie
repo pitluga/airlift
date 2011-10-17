@@ -1,3 +1,5 @@
 #!/usr/bin/env ruby
 
-require "lorrie"
+require "lorrie/cli"
+
+Lorrie::CLI.start
