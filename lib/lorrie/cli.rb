@@ -7,7 +7,7 @@ module Lorrie
     desc "new", "creates a new project at given PATH"
     def new(path)
       empty_directory(File.join(path, 'applications'))
-      create_file(File.join(path, 'applications', 'puppet.rb'), <<-EOF)
+      create_file(File.join(path, 'applications', 'supply_drop.rb'), <<-EOF)
 require 'supply_drop'
 
 role :server, *data_center.nodes
