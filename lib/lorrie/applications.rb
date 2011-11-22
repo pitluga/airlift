@@ -1,5 +1,5 @@
 Capistrano::Configuration.instance.load do
-  location = fetch(:application_dir, "config/deploy")
+  location = fetch(:application_dir, "applications")
 
   unless exists?(:applications)
     set :applications, Dir["#{location}/*.rb"].map { |f| File.basename(f, ".rb") }
@@ -8,7 +8,7 @@ Capistrano::Configuration.instance.load do
   applications.each do |name|
     desc "Set the target application to `#{name}'."
     task(name) do
-      load "#{location}/#{application}"
+      load "#{location}/#{name}.rb"
     end
   end
 end
