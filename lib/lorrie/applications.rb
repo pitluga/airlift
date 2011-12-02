@@ -11,4 +11,4 @@ Capistrano::Configuration.instance.load do
       load "#{location}/#{name}.rb"
     end
   end
-end
+end if Capistrano::Configuration.instance

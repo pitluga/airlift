@@ -21,5 +21,6 @@ Gem::Specification.new do |s|
   s.add_dependency "capistrano", "~> 2.9"
   s.add_dependency "supply_drop", "~> 0.4"
   s.add_dependency "thor", "~> 0.14"
+  s.add_dependency "hiera", "~> 0.2"
   s.add_development_dependency "rspec", "2.5.0"
 end

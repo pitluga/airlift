@@ -1,0 +1,4 @@
+key: "common value"
+deeply:
+  nested:
+    key: "deeply nested value"
