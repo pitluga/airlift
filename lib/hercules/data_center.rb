@@ -1,4 +1,4 @@
-module Lorrie
+module Hercules
   module DataCenter
     def define(name, &definition)
       context = Context.new

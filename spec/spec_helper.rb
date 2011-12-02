@@ -1,3 +1,3 @@
 require 'bundler/setup'
 
-require 'lorrie'
+require 'hercules'

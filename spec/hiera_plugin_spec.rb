@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Lorrie::HieraPlugin do
+describe Hercules::HieraPlugin do
   describe "lookup" do
     it "looks up keys in domain specific yaml files" do
       config = Capistrano::Configuration.new

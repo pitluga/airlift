@@ -1,6 +1,6 @@
 require 'thor'
 
-module Lorrie
+module Hercules
   class CLI < Thor
     include Thor::Actions
 

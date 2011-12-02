@@ -1,4 +1,4 @@
-module Lorrie
+module Hercules
   module HieraPlugin
     def lookup(key)
       hiera = Hiera.new(

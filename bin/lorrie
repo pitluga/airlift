@@ -1,5 +1,0 @@
-#!/usr/bin/env ruby
-
-require "lorrie/cli"
-
-Lorrie::CLI.start
