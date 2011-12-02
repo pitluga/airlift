@@ -1,0 +1,6 @@
+data_center.define :<%= config[:name] %> do
+  set :domain, "<%= config[:domain] %>"
+
+  node "web1", :app
+  node "db", :db
+end

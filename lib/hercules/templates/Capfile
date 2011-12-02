@@ -1,0 +1,7 @@
+$:.unshift File.expand_path("../../../lib", __FILE__)
+require 'hercules'
+
+Dir.glob(File.expand_path('../data_centers/*.rb', __FILE__)).each { |dc| load(dc) }
+
+set :hiera_data_dir, File.expand_path("../data", __FILE__)
+set :hiera_hierarchy, ["%{domain}/%{hostname}", "%{domain}", "common"]
