@@ -1,6 +1,6 @@
 module Hercules
   module Capistrano
-    module DataCenter
+    module DataCenterPlugin
       def define(name, &definition)
         context = Context.new
         context.instance_eval &definition

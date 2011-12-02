@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Hercules::Capistrano::DataCenter do
+describe Hercules::Capistrano::DataCenterPlugin do
   describe "define" do
     it "creates a task for the data center" do
       config = Capistrano::Configuration.new
