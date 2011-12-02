@@ -17,6 +17,14 @@ describe Hercules::Capistrano::HieraPlugin do
       config.hiera.lookup("key").should == "common value"
     end
 
+    it "allows overriding the hierarchy" do
+      config = Capistrano::Configuration.new
+      config.set(:hiera_data_dir, File.expand_path("../../support/data", __FILE__))
+      config.set(:hiera_hierarchy, %w(different))
+
+      config.hiera.lookup("key").should == "different value"
+    end
+
     it "looks up nested values" do
       pending "need to pull request hiera"
       config = Capistrano::Configuration.new

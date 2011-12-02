@@ -6,8 +6,8 @@ module Hercules
           :config => {
             :yaml => { :datadir => hiera_data_dir },
             :backends => ["yaml"],
-            :logger => "silent",
-            :hierarchy => ["%{domain}/%{hostname}", "%{domain}", "common"]
+            :logger => fetch(:hiera_logger, "silent"),
+            :hierarchy => fetch(:hiera_hierarchy, ["%{domain}/%{hostname}", "%{domain}", "common"])
           }
         )
         @hiera.lookup(key, nil, self)

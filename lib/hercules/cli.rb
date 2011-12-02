@@ -18,7 +18,7 @@ role :server, *data_center.nodes
       empty_directory(File.join(path, 'modules'))
       create_file(File.join(path, 'Capfile'), <<-EOF)
 require 'rubygems'
-require 'lorrie'
+require 'hercules'
 Dir.glob(File.expand_path('../data_centers/*.rb', __FILE__)).each { |dc| load(dc) }
       EOF
     end
