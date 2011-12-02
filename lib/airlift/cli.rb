@@ -1,8 +1,8 @@
 require 'thor'
 require 'thor/group'
-require 'hercules/generate'
+require 'airlift/generate'
 
-module Hercules
+module Airlift
   class CLI < Thor
     include Thor::Actions
     source_root File.expand_path("../templates", __FILE__)

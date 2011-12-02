@@ -1,4 +1,4 @@
-module Hercules
+module Airlift
   module Capistrano
     module DataCenterPlugin
       def define(name, &definition)

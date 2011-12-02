@@ -1,5 +1,5 @@
 $:.unshift File.expand_path("../../../lib", __FILE__)
-require 'hercules'
+require 'airlift'
 
 Dir.glob(File.expand_path('../data_centers/*.rb', __FILE__)).each { |dc| load(dc) }
 

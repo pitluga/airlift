@@ -1,4 +1,4 @@
-module Hercules
+module Airlift
   module Capistrano
     module HieraPlugin
       def lookup(key)
