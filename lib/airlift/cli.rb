@@ -17,7 +17,6 @@ module Airlift
         File.join(path, 'applications', 'supply_drop.rb')
       )
       empty_directory File.join(path, 'data_centers')
-      empty_directory File.join(path, 'data')
       directory "data", File.join(path, "data")
       directory "manifests", File.join(path, "manifests")
       empty_directory File.join(path, 'modules')
